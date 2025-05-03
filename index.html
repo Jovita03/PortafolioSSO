@@ -15,44 +15,49 @@
       
       <nav>
         <ul>
-          <li><a href="#about">Introducción</a></li>
-          <li><a href="#projects">Unidad 1</a></li>
-          <li><a href="#conclusion">Conclusión</a></li>
-        </ul>
+          <ul>
+            <li><button class="btn" onclick="mostrarSeccion('introduccion')">Introducción</button></li>
+            <li><button class="btn" onclick="mostrarSeccion('unidad1')">Unidad 1</button></li>
+            <li><button class="btn" onclick="mostrarSeccion('unidad2')">Unidad 2</button></li>
+          </ul>
       </nav>
     </div>
   </header>
 
-  <section id="about" class="section">
+<main>
+  <section id="introduccion" class="seccion section" style="display: none;">
+
     <div class="container">
       <h2>Introducción</h2>
       <p>En ésta página web encontrarán el portafolio de evidencias de 
         la materia de Seminario de Uso, Adaptación y Explotación de Sistemas
          Operativos, dónde estará cada actividad realizada a lo largo de este 
-         semestre en cuanto a la Unidad 1, se muestra el título de la actividad, 
+         semestre en cuanto a la Unidad 1 y 2, se muestra el título de la actividad, 
          una descripción a cerca de lo que trató esta actividad y un apartado
           donde podrán ingresar al PDF para ver la actividad completa.
           <br>
         En general este portafolio muestra de una manera muy clara las
          actividades que se han llevado a cabo hasta el momento, así como también 
-         conclusión personal de esta unidad.
+         conclusión personal de cada unidad, en la cual se menciona lo aprendido
+         y lo que se espera aprender en un futuro, así como también la importancia que cada activbidad tuvo para el desarrollo de la materia.
         </p>
-        <h3>Unidad 1: Instalación de sistemas operativos </h3>
-        <p>En la unidad 1 se vieron temas  respecto a la instalación de sistemas operativos, 
-          empezando desde los conceptos más básicos hasta procedimientos de USB booteable.
-          <br>
-          De este modo también se desarrollo el tema de tipos de sistemas operativos, distribuciones y licencias.
-          Así como también se presentó un tema muy importante y amplio acerca de máquinas virtuales,
-          en el cual trabajamos en la instalación de 3 sistemas operativos por medio de máquina virtual.
-          <br>
-          Por último es importante mencionar que se logró trabajar en equipo en cuanto al tema de dispositivos
-          físicos, en el que colaborativamente se logró el objetivo de recopilar bastantes definiciones acerca de estos dispositivos.</p>
+       
     </div>
   </section>
 
-  <section id="projects" class="section">
+  <section id="unidad1" class="seccion section" style="display: none;">
     <div class="container">
-      <h2>Actividades</h2>
+      <h3>Unidad 1: Instalación de sistemas operativos </h3>
+      <p>En la unidad 1 se vieron temas  respecto a la instalación de sistemas operativos, 
+        empezando desde los conceptos más básicos hasta procedimientos de USB booteable.
+        <br>
+        De este modo también se desarrollo el tema de tipos de sistemas operativos, distribuciones y licencias.
+        Así como también se presentó un tema muy importante y amplio acerca de máquinas virtuales,
+        en el cual trabajamos en la instalación de 3 sistemas operativos por medio de máquina virtual.
+        <br>
+        Por último es importante mencionar que se logró trabajar en equipo en cuanto al tema de dispositivos
+        físicos, en el que colaborativamente se logró el objetivo de recopilar bastantes definiciones acerca de estos dispositivos.</p>
+        <h2>actividades</h2>
       <div class="project-grid">
         <div class="project-card">
           <img src="Images/1.jpg" alt="Imagen">
@@ -63,6 +68,7 @@
             herramienta para desarrollar la actividad, solicitándole los conceptos y procesos para el arranque de la computadora.</p>
           <a href="https://drive.google.com/file/d/1vRFRweqTTt-6-zaCxor7YQqrpmEeKMzb/view?usp=sharing" target="_blank" class="btn">Ver PDF</a>
         </div>
+
         <div class="project-card">
             <img src="Images/2.jpg" alt="Imagen"></img2>
           <h3>Actividad 2</h3>
@@ -107,29 +113,118 @@
         </div>
       </div>
     </div>
-  </section>
-
-  <section id="conclusion" class="section">
-    <div class="container">
-      <h2>Conclusión</h2>
-      <div class="project-card">
-        <p>Gracias a esta unidad puedo decir que se obtuvo el conocimiento básico sobre sistemas operativos, ya que la parte teórica 
-          y práctica estuvo muy bien estructurada y diseñada para que fuera facil de comprender y asi generarnos mas interes para seguir
-           indagando a cerca de esos temas, ya que en nuestra carrera es esenciual conocer el funcionamiento de estos sistemas operativos.
-          <br>
-          Las actividades en si fueron fáciles, sin embargo si se requería tiempo y dedicación para entenderlas y así poder lograr 
-          nuestras prácticas de una manera más sencilla.
-          <br>
-          Fue de mi agrado esta unidad ya que me dejó las bases de los sistemas operativos así como también el conocimiento de 
-          muchísimas cosas que yo desconocía y se que las voy a necesitar en el campo laborar.</p>
-      </div>
+    <div class="conclusion">
+      <h2>Conclusión de la Unidad 1</h2>
+              <p>Gracias a esta unidad puedo decir que se obtuvo el conocimiento básico sobre sistemas operativos, ya que la parte teórica 
+                y práctica estuvo muy bien estructurada y diseñada para que fuera facil de comprender y asi generarnos mas interes para seguir
+                 indagando a cerca de esos temas, ya que en nuestra carrera es esenciual conocer el funcionamiento de estos sistemas operativos.
+                <br>
+                Las actividades en si fueron fáciles, sin embargo si se requería tiempo y dedicación para entenderlas y así poder lograr 
+                nuestras prácticas de una manera más sencilla.
+                <br>
+                Fue de mi agrado esta unidad ya que me dejó las bases de los sistemas operativos así como también el conocimiento de 
+                muchísimas cosas que yo desconocía y se que las voy a necesitar en el campo laborar.</p>
     </div>
   </section>
 
-  <footer>
+  <section id="unidad2" class="seccion section" style="display: none;">
     <div class="container">
-      <p>&copy; 2025 Portafolio de evidencias </p>
+        
+      <h3>Unidad 2: Configuración de Servicios</h3>
+      <p>
+        En la Unidad 2 se abordaron temas más centrados en la configuración de servicios y en la definición de procesos dentro de los sistemas operativos.
+        Se estudiaron conceptos clave como procesos, hilos, subprocesos, exclusión mutua, sincronización, interbloqueo y soluciones a interbloqueos.
+        <br>
+        Lo más importante de esta unidad fue la forma en que se plantearon soluciones a los problemas mencionados. Después de estudiar la teoría, se pasó a la parte práctica,
+        en la que se desarrollaron programas como el del productor-consumidor y el de los filósofos comensales. Estos códigos representaron un verdadero reto, ya que cada integrante
+        propuso distintas soluciones y enfoques para resolverlos.
+      </p>      
+
+          <h2>Actividades</h2>
+
+          <div class="project-grid">
+            <div class="project-card">
+              <img src="Images/8.jpg" alt="Imagen">
+              <h3>Actividad 8</h3>
+              <h3>Conociendo los procesos, subprocesos, hilos y su entorno </h3>
+              <p>En esta actividad se exploraron los conceptos fundamentales de procesos, subprocesos e hilos dentro del sistema operativo. 
+                Se analizaron sus diferencias, características y cómo interactúan con el entorno del sistema, permitiendo entender mejor la 
+                el manejo de tareas.</p>
+              <a href="https://drive.google.com/file/d/1IqEJ-FpSajIPwSBPmRFshwOfHGh4F9Gl/view?usp=sharing" target="_blank" class="btn">Ver PDF</a>
+            </div>
+    
+            <div class="project-card">
+                <img src="Images/9.jpg" alt="Imagen"></img2>
+              <h3>Actividad 9</h3>
+              <h3>Concurrencia, exclusión mutua, sincronización y problemas de control</h3>
+              <p>La actividad abordó los conceptos de concurrencia, exclusión mutua y sincronización, explicando cómo se presentan problemas 
+                de control cuando múltiples procesos acceden a recursos compartidos. Se presentaron ejemplos y estrategias para evitar conflictos 
+                y garantizar una correcta ejecución.</p>
+
+              <a href="https://drive.google.com/file/d/1vDucPv6gigmmCXRozI_lhyoVCzxnnt4W/view?usp=sharing" target="_blank" class="btn">Ver PDF</a>
+            </div>
+
+            <div class="project-card">
+              <img src="Images/10.jpg" alt="Imagen">
+              <h3>Actividad 10</h3>
+              <h3>Exclusión mutuas</h3>
+              <p>Esta actividad profundizó en el tema de la exclusión mutua, mostrando su importancia para evitar condiciones de carrera.
+                 Se estudiaron mecanismos como semáforos para controlar el acceso a recursos compartidos entre procesos o hilos, mejorando así la estabilidad del sistema.</p>
+
+
+              <a href="https://drive.google.com/file/d/16elF0QcG8h8UyqE8CEb4LAjd3VZdVhaU/view?usp=sharing" target="_blank" class="btn">Ver PDF</a>
+            </div>
+
+            <div class="project-card">
+              <img src="Images/11.jpg" alt="Imagen">
+              <h3>Actividad 11</h3>
+              <h3>Productor-Consumidor</h3>
+              <p>Se desarrolló una solución al problema clásico del productor-consumidor, en el cual se simula la interacción entre procesos 
+                que generan y consumen datos. La actividad permitió aplicar conocimientos sobre sincronización y exclusión mutua mediante el uso de semáforos.</p>
+
+              <a href="https://drive.google.com/file/d/15n9QTUdTmSLDfTjlFcHz0rL1ADnScvdv/view?usp=sharing" target="_blank" class="btn">Ver PDF</a>
+            </div>
+
+            <div class="project-card">
+              <img src="Images/12.jpg" alt="Imagen">
+              <h3>Actividad 12</h3>
+              <h3>Las soluciones al Interbloqueo (filósofos)</h3>
+              <p>La última actividad consistió en implementar una solución al problema de los filósofos comensales, 
+                un ejemplo típico de interbloqueo. Se aplicaron técnicas para evitar que los procesos quedaran esperando indefinidamente, 
+                favoreciendo un sistema más eficiente y seguro.</p>
+
+
+              <a href="https://drive.google.com/file/d/1kU1KcLlmFqbB_wN3WopMS2DaLoTAtGx8/view?usp=sharing" target="_blank" class="btn">Ver PDF</a>
+            </div>
     </div>
-  </footer>
+    <div class="conclusion">
+      <h2>Conclusión de la Unidad 2</h2>
+      <p>
+        Concluir la Unidad 2 me permitió tener una visión mucho más clara sobre cómo funcionan los procesos dentro de un sistema operativo
+        y por qué es tan importante comprender conceptos como concurrencia, hilos, sincronización e interbloqueos. A lo largo de las actividades, 
+        no solo reforcé la parte teórica, sino que también desarrollé habilidades prácticas al implementar soluciones a problemas reales de control 
+        de procesos, como el productor-consumidor o los filósofos comensales. Estas experiencias me hicieron darme cuenta de lo complejo y fascinante
+        que puede ser el diseño de sistemas que manejan múltiples tareas al mismo tiempo. Sin duda, esta unidad me ayudó a notar la importancia
+        de planear correctamente la ejecución de un sistema o tarea en un entorno informático y a desarrollar un pensamiento más estructurado y lógico 
+        para enfrentar desafíos como el de los codigos de producto consumidor y filosofos  .
+      </p>
+      
+    </div>
+  </section>
+
+</main>
+  <script>
+    function mostrarSeccion(id) { //Define una función llamada mostrarSeccion que recibe un parámetro id
+      const secciones = document.querySelectorAll('.seccion');  //Selecciona todos los elementos del documento que tengan la clase .seccion y los guarda en la variable secciones
+      secciones.forEach(s => s.style.display = 'none'); //Oculta todas las secciones estableciendo su estilo display a 'none'
+      const seleccionada = document.getElementById(id); //Selecciona el elemento con el id proporcionado como argumento y lo guarda en la variable seleccionada
+      if (seleccionada) { // Verifica si el elemento seleccionado existe
+        seleccionada.style.display = 'block'; //Muestra la sección seleccionada estableciendo su estilo display a 'block'
+      }
+    }
+    document.addEventListener("DOMContentLoaded", () => { //Escucha el evento DOMContentLoaded, que se dispara cuando el documento HTML ha sido completamente cargado y analizado
+      mostrarSeccion('introduccion'); //Llama a la función mostrarSeccion con el id 'introduccion' para mostrar la sección de introducción al cargar la página
+    });
+  </script>
 </body>
 </html>

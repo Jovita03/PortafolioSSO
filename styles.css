@@ -2,10 +2,14 @@ body {
     margin: 0;
     font-family: 'Times New Roman', Times, serif;
     background-color: #ffffff; 
-    color: #4A235A;
+    color: #000000;
     line-height: 1.6;
     opacity: 0;
     animation: fadeIn 1.5s ease-in-out forwards;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
   }
   @keyframes fadeIn {
     from {
@@ -58,7 +62,7 @@ body {
   }
   
   header h1 {
-    font-size: 3rem;
+    font-size: 2rem;
     margin-bottom: 1rem;
     color: #f4f4f4;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -99,41 +103,56 @@ body {
   .container {
     max-width: 1200px;
     margin: 0 auto;
+    text-align: justify;
+  }
+  .container p {
+    font-size: 1.2rem;
+    color: #333; 
+    line-height: 1.8;
+    margin-bottom: 2rem;
   }
   .btn {
     display: inline-block;
-    padding: 10px 20px;
-    background-color: #C599B6; 
-    color: #fff;
+    padding: 12px 24px;
+    background-color: #C599B6;
+    color: #ffffff;
     text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    transition: background-color 0.3s, transform 0.2s;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
     text-align: center;
+    cursor: pointer;
 }
 
 .btn:hover {
-    background-color: #FFB8E0;
-    transform: scale(1.05); 
+    background-color: #b186a5;
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
+
   h2 {
-    font-size: 2.5rem;
+    font-size:2.5rem;
     color: #2d2d2d; 
     margin-bottom: 1rem;
     text-transform: uppercase;
     letter-spacing: 1px;
+    text-align: center;
   }
   h3 {
     font-size: 1.5rem;
     color: #2d2d2d; 
     margin-bottom: 1rem;
     letter-spacing: 1px;
+    text-align: center;
   }
   #about p {
     max-width: 990px;
     margin: 0 auto;
-    font-size: 1.2rem;
+    font-size: 2rem;
     color: #333;
     line-height: 1.8;
     text-align: justify;
@@ -182,7 +201,21 @@ body {
     text-decoration: none;
     transition: color 0.3s ease;
   }
-  
+  .conclusion {
+    font-size: 1.5rem;
+    color: #2d2d2d; 
+    margin-top: 2rem;
+    text-align: center;
+  }
+  .conclusion p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    color: #333; 
+    line-height: 1.8;
+    text-align: justify;
+  }
+
   .project-card a:hover {
     color: #2E073F;
   }
@@ -194,17 +227,7 @@ body {
     border-radius: 10px;
     margin-bottom: 1rem;
   }
- 
-  footer {
-    background-color: #C599B6;
-    color: #fff; 
-    text-align: center;
-    padding: 2rem 0;
-  }
   
-  footer p {
-    margin: 0;
-    font-size: 1.3rem;
-    color: black;
+  main {
+    flex: 1;
   }
-  
