@@ -19,6 +19,7 @@
             <li><button class="btn" onclick="mostrarSeccion('introduccion')">Introducción</button></li>
             <li><button class="btn" onclick="mostrarSeccion('unidad1')">Unidad 1</button></li>
             <li><button class="btn" onclick="mostrarSeccion('unidad2')">Unidad 2</button></li>
+            <li><button class="btn" onclick="mostrarSeccion('unidad3')">Unidad 3</button></li>
           </ul>
       </nav>
     </div>
@@ -32,14 +33,14 @@
       <p>En ésta página web encontrarán el portafolio de evidencias de 
         la materia de Seminario de Uso, Adaptación y Explotación de Sistemas
          Operativos, dónde estará cada actividad realizada a lo largo de este 
-         semestre en cuanto a la Unidad 1 y 2, se muestra el título de la actividad, 
+         semestre en cuanto a la Unidad 1,2 y 3. Donde se muestra el título de la actividad, 
          una descripción a cerca de lo que trató esta actividad y un apartado
           donde podrán ingresar al PDF para ver la actividad completa.
           <br>
         En general este portafolio muestra de una manera muy clara las
-         actividades que se han llevado a cabo hasta el momento, así como también 
-         conclusión personal de cada unidad, en la cual se menciona lo aprendido
-         y lo que se espera aprender en un futuro, así como también la importancia que cada activbidad tuvo para el desarrollo de la materia.
+         actividades que se realizaron a lo largo del semestre en esta materia, así como también 
+         conclusión personal de cada unidad, en la cual se menciona lo aprendido,
+          así como también la importancia que cada activbidad tuvo para el desarrollo de la materia.
         </p>
        
     </div>
@@ -211,8 +212,62 @@
       
     </div>
   </section>
+  <section id="unidad3" class="seccion section" style="display: none;">
+    <div class="container">
+        
+      <h3>Unidad 3: Optimización</h3>
+      <p>
+        En la Unidad 3 se abordaron temas más centrados en la optimizacion de recursos mediante los scripts, asi como tambien se abordaron temas de paralelismo y 
+        como ultimo tema pero no menos importante  se abordó el tema de seguridad, en el cual se presentaron los conceptos de seguridad y su importancia dentro de un sistema operativo. 
+    
+      </p>      
 
-</main>
+          <h2>Actividades</h2>
+
+          <div class="project-grid">
+            <div class="project-card">
+              <img src="Images/14.jpg" alt="Imagen">
+              <h3>Actividad 14</h3>
+              <h3>Scripts para optimizar </h3>
+              <p>En esta actividad lo primero que se realizo fue una infografia acerca de los script, su significado, funcionalidad y elementos, donde en base
+                 a estos conceptos el reto presentado fue crear un script en el cual el objetivo fue optimizar tareas a base de este.</p>
+              <a href="https://drive.google.com/file/d/1J2_PxU_nVlfzYQpBO3OaJMS_ZQiWMVU9/view?usp=sharing" target="_blank" class="btn">Ver PDF</a>
+            </div>
+    
+            <div class="project-card">
+                <img src="Images/15.jpg" alt="Imagen"></img2>
+              <h3>Actividad 15</h3>
+              <h3>Paralelismo</h3>
+              <p>La actividad abordó los conceptos de paralelismo pero ahora basandonos en la herramienta de Intel Parallel studio XE y como es que 
+                esta puede ser clave como una gran herramien ta de ayuda dentro de la programacion con hilos como lo vimos en la unidad pasada .</p>
+
+              <a href="https://drive.google.com/file/d/1u_6KjE9yMaho8i_t9pqICFS6FnzRbjHn/view?usp=sharing" target="_blank" class="btn">Ver PDF</a>
+            </div>
+
+            <div class="project-card">
+              <img src="Images/16.jpg" alt="Imagen">
+              <h3>Actividad 16</h3>
+              <h3>Seguridad</h3>
+              <p>Esta ultima actividad abordo los temas se seguridad en los sistemas operativos, seguridad en la red y seguridad del usuiario,
+                tema muy impportante presentado a manera de investigación.</p>
+
+              <a href="https://drive.google.com/file/d/1bVNdoWW72rT1AiXVEsKuQZo1DS8bdUh_/view?usp=sharing" target="_blank" class="btn">Ver PDF</a>
+            </div>
+            
+    </div>
+    <div class="conclusion">
+      <h2>Conclusión de la Unidad 3</h2>
+      <p>
+        En esta unidad se abordaron temas fundamentales para mejorar el rendimiento, la eficiencia y la seguridad dentro del entorno de los sistemas operativos.
+        A través del uso de scripts, se exploró cómo automatizar y optimizar tareas repetitivas. Con el paralelismo y el uso de herramientas como Intel Parallel 
+        Studio XE, se comprendió la importancia de ejecutar procesos simultáneamente para aprovechar mejor los recursos. Finalmente, se reflexionó sobre la 
+        seguridad en los sistemas, destacando la protección del sistema, la red y el usuario como aspectos clave en cualquier entorno informático.
+      </p>
+      
+    </div>
+  </section>
+
+</main>7
   <script>
     function mostrarSeccion(id) { //Define una función llamada mostrarSeccion que recibe un parámetro id
       const secciones = document.querySelectorAll('.seccion');  //Selecciona todos los elementos del documento que tengan la clase .seccion y los guarda en la variable secciones
